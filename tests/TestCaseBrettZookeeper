@@ -4,7 +4,7 @@
  * Created by root on 10/25/15.
  */
 class TestCaseBrettZookeeper extends GroovyTestCase {
-    void testFirstTest(){
+    void testLookUpInformationAboutOtters(){
         Webdriver driver = new FirefoxDriver();
         driver
     }
