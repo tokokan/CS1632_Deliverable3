@@ -25,8 +25,8 @@
       <file leaf-file-name="TestCaseBrettZookeeper" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/TestCaseBrettZookeeper">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16857441">
-              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.4568158">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -371,8 +371,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/TestCaseBrettZookeeper">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16857441">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.4568158">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
           <folding />
         </state>
       </provider>
