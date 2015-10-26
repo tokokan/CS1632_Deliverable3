@@ -38,4 +38,15 @@ So that I can understand the article better
 
 
 
+As a biography enthusiast
+I would like to see in an article about a person's age (if they are living) or their deathdate (if they died already ):
+So that my hobby will be completed
 
+	Given that I am on a biographical page of a living person
+	When I try to look for his/her general biography info
+	Then I will see their current age
+
+
+	Given that I am on a biographical page of a dead person
+	When I try to look for his/her general biography info
+	Then I will see the date when they died
