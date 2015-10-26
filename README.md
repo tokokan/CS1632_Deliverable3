@@ -7,3 +7,35 @@ User stories (around 5 tests each to make up the 20 total):
 -Someone who wants to be knowledgeable so they look at the featured articles, the did you know, and the in the news
 -Someone who wants to contribute to the page so that they can feel validated, so they use the talk option
 
+(Note: Scenarios is in connextra form or something, as a <role> I want <feature> So that <benefit>
+I think It's also useful to have all scenarios of the same user story be indented under the user story itself.
+Scenario format: Given <precondition>, When <input/steps> , Then <expected behavior>
+
+
+As a non-English speaker
+I want Wikipedia articles in my native language(s)
+So that I can understand the article better
+
+	Given that I am on the main page
+	When I click on the link "Espanol"
+	Then I will be redirect to Spanish Wikipedia page
+	
+	Given that I open a browser or tab
+	When I access Wikipedia page with Spanish prefix in the address
+	Then I will be redirect to Spanish Wikipedia page
+	
+	Given that I am on an Ensligh Wikipedia article which offer Spanish translation
+	When I click on the link to Spanish translation
+	Then I will be redirect to Spanish article of the original article
+	
+	Given that I open a brower or a tab
+	When I type the English wikipedia article, with Spanish prefix in the address
+	Then I will be redirect to Spanish article of the original article
+	
+	Given that I am on a non-Spanish wikipedia article which does not offer Spanish translation
+	When I try to add Spanish prefix in the article's address
+	Then I will be notified the article does not exist
+
+
+
+
