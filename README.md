@@ -53,7 +53,6 @@ So that my hobby will be completed
 	Given that I am on a biographical page of a fictional character
 	When I try to look for his/her/it general biography
 	Then I will not be able to see their real time age/death
-	(This scenario will fail as a test)
 
 As a movie enthusiast
 I would like to see the director's name of a movie
