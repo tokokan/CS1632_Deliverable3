@@ -50,4 +50,30 @@ public class TestAge {
 	}
 	
 	
+	/*
+	Given that I am on a biographical page of a fictional character
+	When I try to look for his/her/it general biography
+	Then I will not be able to see their real time age/death
+	
+	Note: This test will fail!
+	*/
+	@Test
+	public void TestAge_Fictional() {
+		//get person page
+		driver.get("https://en.wikipedia.org/wiki/Winnie-the-Pooh");
+		//get the correct div with the given class -> get the attribute inside
+		try
+		{
+			WebElement e = driver.findElement(By.className("deathdate"));
+			//assert
+			assertTrue(e.isEnabled());
+		}
+		//this test will fail
+		catch (NoSuchElementException e)
+		{
+			fail();
+		}
+	}
+	
+	
 }

@@ -46,7 +46,23 @@ So that my hobby will be completed
 	When I try to look for his/her general biography info
 	Then I will see their current age
 
-
 	Given that I am on a biographical page of a dead person
 	When I try to look for his/her general biography info
 	Then I will see the date when they died
+	
+	Given that I am on a biographical page of a fictional character
+	When I try to look for his/her/it general biography
+	Then I will not be able to see their real time age/death
+	(This scenario will fail as a test)
+
+As a movie enthusiast
+I would like to see the director's name of a movie
+So that I would be more knowledgeable about the movie
+
+	Given that I am on a movie page which is directed by one person
+	When I look at the Directed by text
+	Then I can see the director's name
+	
+	Given that I am on a movie page which is directed by 2 person
+	When I look at the "Directed by" text
+	Then I can see 2 names listed
