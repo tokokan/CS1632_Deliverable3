@@ -1,15 +1,3 @@
-CS1632_Deliverable3
-
-
-User stories (around 5 tests each to make up the 20 total):
--Zookeeper looking up animal information, but is curious about the disambiguation of a word.
--A teacher checking on the references and revisions on an article to make sure that it is an okay source for the students
--Someone who wants to be knowledgeable so they look at the featured articles, the did you know, and the in the news
--Someone who wants to contribute to the page so that they can feel validated, so they use the talk option
-
-(Note: Scenarios is in connextra form or something, as a <role> I want <feature> So that <benefit>
-I think It's also useful to have all scenarios of the same user story be indented under the user story itself.
-Scenario format: Given <precondition>, When <input/steps> , Then <expected behavior>
 
 
 As a non-English speaker
@@ -65,3 +53,55 @@ So that I would be more knowledgeable about the movie
 	Given that I am on a movie page which is directed by 2 person
 	When I look at the "Directed by" text
 	Then I can see 2 names listed
+
+As a citizen of Otter, Ontario
+I want to be able to find the wikipedia page of my hometown
+So that I can add important local information
+
+	Given that I am on a wikipedia page with disambiguation
+	When I click the 'page-name (disambiguation)' link
+	Then I should arrive at the disambiguation page
+
+	Given that I am on a disambiguation page
+	When I select a navigation element from the Contents bar
+	Then I should be moved to that section of the contents
+
+	Given that I am at the disambiguation page
+	When I toggle to hide the Contents Bar
+	The contents should no longer be visible
+
+	Given that I am on the disambiguation page
+	When I select the Wikitionary link
+	I should be moved to a Wikitionary URL
+
+	Given that I am on the disambiguation page
+	When I select a link in the body
+	I should be moved to a url that is a disambiguation of the original page
+
+As a Biologist
+I would like to be able to log in
+So that I can add pages about my specialties to my watchlist
+
+	Given that I am on a wikipedia page and not logged in
+	When I press the button to log in
+	I will be taken to a log-in page
+
+	Given that I am on a wikipedia page
+	When I try to log into an account with valid credentials
+	Then my username will be displayed on the next page
+
+	Given that I am on a wikipedia page
+	When I try to log into an account with invalid credentials, such as a swapped username and password
+	Then my username will be not displayed on the next page
+
+	Given that I am on a wikipedia page and logged in
+	When I try to clock on the log out button
+	Then I will no longer be logged in to wikipedia
+
+	Given that I am on a wikipedia page and logged in
+	When another tap is open and navigated to wikipedia
+	Then I will still be logged in
+
+(Account used for testing:
+Username: CS1632testaccount
+Password: Laboooooon)

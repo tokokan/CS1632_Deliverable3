@@ -1,4 +1,3 @@
-package CS1632_Deliverable3.tests;
 
 import static org.junit.Assert.*;
 
@@ -18,7 +17,12 @@ So that I can understand the article better
 public class TestLanguage {
 
 	static WebDriver driver = new HtmlUnitDriver();
-	
+
+	@Before
+	public void turnOffCSSWarnings(){
+		java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(java.util.logging.Level.OFF);
+		java.util.logging.Logger.getLogger("org.apache.http").setLevel(java.util.logging.Level.OFF);
+	}
 	/*
 	Given that I am on the main page
 	When I click on the link "Espanol"

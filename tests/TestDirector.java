@@ -1,4 +1,3 @@
-package CS1632_Deliverable3.tests;
 
 import static org.junit.Assert.*;
 
@@ -17,7 +16,12 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 public class TestDirector {
 
 	static WebDriver driver = new HtmlUnitDriver();
-	
+
+	@Before
+	public void turnOffCSSWarnings(){
+		java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(java.util.logging.Level.OFF);
+		java.util.logging.Logger.getLogger("org.apache.http").setLevel(java.util.logging.Level.OFF);
+	}
 	/*
 	Given that I am on a movie page which is directed by one person
 	When I look at the Directed by text

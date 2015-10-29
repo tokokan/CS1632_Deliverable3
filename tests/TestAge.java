@@ -1,4 +1,3 @@
-package CS1632_Deliverable3.tests;
 
 import static org.junit.Assert.*;
 
@@ -17,7 +16,13 @@ So that my hobby will be completed
 public class TestAge {
 
 	static WebDriver driver = new HtmlUnitDriver();
-	
+
+	@Before
+	public void turnOffCSSWarnings(){
+		java.util.logging.Logger.getLogger("com.gargoylesoftware.htmlunit").setLevel(java.util.logging.Level.OFF);
+		java.util.logging.Logger.getLogger("org.apache.http").setLevel(java.util.logging.Level.OFF);
+	}
+
 	/*
 	Given that I am on a biographical page of a living person
 	When I try to look for his/her general biography info
